@@ -13,12 +13,20 @@ class BusStop
   end
 
 
+  def collector
+    x = @queue
+    @queue = []
+    return x
+
+
+
+  end
 
 
 
 
 
-  
+
 
 
 

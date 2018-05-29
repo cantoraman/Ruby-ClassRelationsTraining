@@ -41,4 +41,7 @@ class BusTest < Minitest::Test
     @bus.banisher
     assert_equal(0, @bus.people.length)
   end
+
+
+
 end

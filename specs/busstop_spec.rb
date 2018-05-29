@@ -29,7 +29,10 @@ class BusStopTest < Minitest::Test
 
 
   def test_collector
-    
+    @busstop.queue_adder(@person3)
+    @busstop.queue_adder(@person4)
+    @busstop.queue_adder(@person5)
+    @bus.people = @busstop.collector()
     assert_equal(0, @busstop.queue.length)
     assert_equal(3, @bus.people.length)
   end
