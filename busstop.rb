@@ -14,9 +14,9 @@ class BusStop
 
 
   def collector
-    x = @queue
+    temporary_queue = @queue
     @queue = []
-    return x
+    return temporary_queue
 
 
 
